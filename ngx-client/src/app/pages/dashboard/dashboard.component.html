@@ -1,0 +1,11 @@
+<div class="row">
+  <ba-card class="col-xlg-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12" title="Temperature/Humidity (real time)" baCardClass="medium-card">
+    <ba-am-chart baAmChartClass="dashboard-line-chart" [baAmChartConfiguration]="chartDataRest" (onChartReady)="initSocketChart($event)"></ba-am-chart>
+  </ba-card>
+</div>
+
+<div class="row">
+  <ba-card class="col-xlg-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12" title="Temperature/Humidity (last hour)" baCardClass="medium-card">
+    <ba-am-chart baAmChartClass="dashboard-line-chart" [baAmChartConfiguration]="chartDataSocket" (onChartReady)="initRestChart($event)"></ba-am-chart>
+  </ba-card>
+</div>
