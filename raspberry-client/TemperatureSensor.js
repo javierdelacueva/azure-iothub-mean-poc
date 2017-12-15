@@ -21,7 +21,7 @@
  // Set Azure IoT variables
  var clientFromConnectionString = require('azure-iot-device-mqtt').clientFromConnectionString;
  var Message = require('azure-iot-device').Message;
- var connectionString = 'HostName=jco-iothub.azure-devices.net;DeviceId=jco-device1;SharedAccessKey=43Ye6OI/idPEsKgy0zjInsR2qvnKwMIkITB1P55Inx8=';
+ var connectionString = 'HostName={YOUR CONNECTION STRING}';
  var client = clientFromConnectionString(connectionString);
 
  // Generic functions
